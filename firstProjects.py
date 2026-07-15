@@ -261,7 +261,7 @@ questions = [
 counter = 0
 
 for item in questions:
-    user_answer = input().strip()
+    user_answer = input(item["question"] + " ").strip()
     if user_answer.lower() == str(item["answer"]).lower():
         print("Correct!")
         counter += 1
